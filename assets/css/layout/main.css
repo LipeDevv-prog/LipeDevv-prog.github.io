@@ -1,0 +1,7 @@
+body {
+    background: var(--surface-1);
+}
+
+.site-main {
+    display: block;
+}

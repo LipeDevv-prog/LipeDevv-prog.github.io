@@ -1,0 +1,28 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__item {
+    color: var(--text-2);
+    font-size: var(--text-sm);
+}
+
+/* prova e tech */
+.hero__proof {
+    padding: 0;
+    margin: 0;
+    margin-top: var(--space-3);
+    display: grid;
+    gap: var(--space-2);
+}
+
+.hero__tech {
+    padding: 0;
+    margin: 0;
+    margin-top: var(--space-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}

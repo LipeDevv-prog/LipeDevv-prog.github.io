@@ -1,0 +1,77 @@
+/* =========================================
+   BUTTONS — componentes reutilizáveis
+   Usa tokens: --accent, --text-*, --border-*, --radius-*, --shadow-*
+   ========================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+
+    padding: 14px 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+
+    font: 700 var(--text-md) / 1 var(--font-sans);
+    text-decoration: none;
+
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+        transform 180ms cubic-bezier(.2, .8, .2, 1),
+        box-shadow 180ms cubic-bezier(.2, .8, .2, 1),
+        background-color 180ms cubic-bezier(.2, .8, .2, 1),
+        border-color 180ms cubic-bezier(.2, .8, .2, 1),
+        opacity 180ms;
+}
+
+.btn:focus-visible {
+    outline: 2px solid rgba(213, 35, 35, 0.55);
+    /* baseado no --accent */
+    outline-offset: 3px;
+}
+
+/* Primário */
+.btn--primary {
+    background: var(--accent);
+    color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background: var(--accent-strong);
+}
+
+.btn--primary:active {
+    transform: translateY(0);
+    opacity: 0.95;
+}
+
+/* Ghost (secundário) */
+.btn--ghost {
+    background: transparent;
+    color: var(--text-1);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.btn--ghost:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.btn--ghost:active {
+    transform: translateY(0);
+    opacity: 0.95;
+}
+
+/* Full width (mobile) */
+.btn--block {
+    width: 100%;
+}

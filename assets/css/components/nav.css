@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--text-2);
+    font-size: var(--text-sm);
+}
+
+.nav__link:hover {
+    color: var(--text-1);
+}

@@ -1,0 +1,36 @@
+body {
+    font-family: var(--font-sans);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--text-1);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.15;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: var(--text-2);
+}
+
+/* texto */
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.hero__kicker {
+    font-size: var(--text-sm);
+    color: var(--text-3);
+    letter-spacing: 0.2px;
+}
+
+.hero__title {
+    font-size: var(--text-3xl);
+    color: var(--text-1);
+}

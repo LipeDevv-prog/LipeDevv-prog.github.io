@@ -1,0 +1,19 @@
+/* =========================================
+   BADGES / CHIPS — componentes reutilizáveis
+   ========================================= */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 12px;
+    border-radius: 12px;
+
+    font: 800 var(--text-sm) / 1 var(--font-sans);
+    letter-spacing: 0.2px;
+
+    color: var(--text-1);
+    background: rgba(255, 255, 255, 0.03);
+    border: var(--border-2);
+}
