@@ -282,93 +282,99 @@
             </div>
         </section>
 
-        <section id="contato">
-            <section id="contato" class="contact" aria-labelledby="contact-title">
-                <div class="container contact__inner">
-
-                    <header class="section-header contact__header">
-                        <h2 id="contact-title" class="section-title">Contato</h2>
-                        <p class="section-subtitle">
-                            Para vagas, freelas ou projetos: me envie uma mensagem e vamos conversar.
-                        </p>
-                    </header>
-
-                    <div class="contact__grid">
-                        <!-- FORM -->
-                        <form class="contact-form" action="#" method="post" aria-label="Formulário de contato">
+        <section id="contato" class="contact" aria-labelledby="contact-title">
+            <div class="container contact__inner">
+        
+                <header class="section-header contact__header">
+                    <h2 id="contact-title" class="section-title">Contato</h2>
+                    <p class="section-subtitle">
+                        Para vagas, freelas ou projetos: me envie uma mensagem e vamos conversar.
+                    </p>
+                </header>
+        
+                <div class="contact__grid">
+        
+                    <!-- Coluna A — Form -->
+                    <section class="contact-form" aria-label="Formulário de contato">
+                        <form class="contact-form__form" action="#" method="post">
                             <fieldset class="contact-form__fieldset">
                                 <legend class="contact-form__legend">Enviar mensagem</legend>
-
+        
                                 <div class="contact-form__field">
                                     <label for="contact-name">Nome</label>
                                     <input id="contact-name" name="name" type="text" autocomplete="name" required />
                                 </div>
-
+        
                                 <div class="contact-form__field">
                                     <label for="contact-email">Email</label>
                                     <input id="contact-email" name="email" type="email" autocomplete="email" required />
                                 </div>
-
+        
                                 <div class="contact-form__field">
                                     <label for="contact-message">Mensagem</label>
                                     <textarea id="contact-message" name="message" rows="6" required></textarea>
                                 </div>
-
+        
                                 <div class="contact-form__actions">
-                                    <button class="btn btn--primary btn--block" type="submit">
-                                        Enviar mensagem
-                                    </button>
+                                    <button class="btn btn--primary btn--block" type="submit">Enviar mensagem</button>
+                                    <a class="btn btn--ghost btn--block" href="mailto:contato.lipedev@gmail.com">Enviar por
+                                        email</a>
                                 </div>
                             </fieldset>
-
-                            <p class="contact-form__fallback">
-                                <a class="contact-link" href="mailto:contato.lipedev@gmail.com">Me envie um email</a>
+        
+                            <p class="contact-form__note">
+                                Se preferir, pode me chamar no WhatsApp ou LinkedIn na coluna ao lado.
                             </p>
                         </form>
-
-                        <!-- LINKS (recrutador/cliente) -->
-                        <aside class="contact-links" aria-label="Links de contato">
-                            <h3 class="contact-links__title">Me encontre</h3>
-
-                            <ul class="contact-links__list" role="list">
-                                <li class="contact-links__item">
-                                    <a class="contact-link" href="mailto:contato.lipedev@gmail.com">
-                                        Email <span>→</span>
-                                    </a>
-                                </li>
-
-                                <li class="contact-links__item">
-                                    <a class="contact-link" href="https://wa.me/556793374017" target="_blank"
-                                        rel="noopener noreferrer">
-                                        WhatsApp <span>→</span>
-                                    </a>
-                                </li>
-
-                                <li class="contact-links__item">
-                                    <a class="contact-link" href="https://github.com/LipeDevv-prog" target="_blank"
-                                        rel="noopener noreferrer">
-                                        GitHub <span>→</span>
-                                    </a>
-                                </li>
-
-                                <li class="contact-links__item">
-                                    <a class="contact-link" href="https://www.linkedin.com/in/felipe-ramos-da-silva-arruda-b58445321/"
-                                        target="_blank" rel="noopener noreferrer">
-                                        LinkedIn <span>→</span>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <p class="contact-links__note">
-                                Respondo todas as mensagens — pode chamar sem medo 🙂
-                            </p>
-                        </aside>
-                    </div>
-
+                    </section>
+        
+                    <!-- Coluna B — Links -->
+                    <aside class="contact-links" aria-label="Links de contato">
+                        <h3 class="contact-links__title">Me encontre</h3>
+        
+                        <ul class="contact-links__list" role="list">
+                            <li class="contact-links__item">
+                                <a class="contact-link" href="mailto:contato.lipedev@gmail.com">
+                                    <span class="contact-link__title">Email</span>
+                                    <span class="contact-link__meta">contato.lipedev@gmail.com</span>
+                                </a>
+                            </li>
+        
+                            <li class="contact-links__item">
+                                <a class="contact-link" href="https://wa.me/556793374017" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="contact-link__title">WhatsApp</span>
+                                    <span class="contact-link__meta">Resposta rápida</span>
+                                </a>
+                            </li>
+        
+                            <li class="contact-links__item">
+                                <a class="contact-link"
+                                    href="https://www.linkedin.com/in/felipe-ramos-da-silva-arruda-b58445321/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="contact-link__title">LinkedIn</span>
+                                    <span class="contact-link__meta">Vagas e networking</span>
+                                </a>
+                            </li>
+        
+                            <li class="contact-links__item">
+                                <a class="contact-link" href="https://github.com/LipeDevv-prog" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="contact-link__title">GitHub</span>
+                                    <span class="contact-link__meta">Código e projetos</span>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <p class="contact-links__note">
+                            Respondo todas as mensagens — pode chamar sem medo 🙂
+                        </p>
+                    </aside>
+        
                 </div>
-            </section>
-
+            </div>
         </section>
+
     </main>
 
     <footer class="site-footer"></footer>
